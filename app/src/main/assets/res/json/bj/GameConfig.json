@@ -1,0 +1,114 @@
+﻿{
+	"gameInfoArr":
+	[
+		{"name" : "重庆时时彩","checkGameType" : 1},
+		{"name" : "新疆时时彩","checkGameType" : 1},
+		{"name" : "天津时时彩","checkGameType" : 1},
+		{"name" : "腾讯分分彩","checkGameType" : 1},
+		{"name" : "谷歌分分彩","checkGameType" : 1},
+		{"name" : "分分时时彩","checkGameType" : 1},
+		{"name" : "二分时时彩","checkGameType" : 1},
+		{"name" : "三分时时彩","checkGameType" : 1},
+		{"name" : "五分时时彩","checkGameType" : 1},
+		{"name" : "腾讯二分彩","checkGameType" : 1}
+	],
+	"icon1Arr":
+	[
+		{"id":"0", "icon":"icon_投注记录.png", 	"name":"投注记录" },
+		{"id":"1", "icon":"icon_盈亏报表.png", 	"name":"盈亏报表" },
+		{"id":"2", "icon":"icon_资金记录.png", 	"name":"资金记录" },
+		{"id":"3", "icon":"icon_帐变明细.png", 	"name":"帐变明细" },
+		{"id":"4", "icon":"icon_我的银行卡.png", 	"name":"我的银行卡" },
+		{"id":"5", "icon":"icon_站内消息.png", 	"name":"站内消息" },
+		{"id":"6", "icon":"icon_设置.png", 	"name":"设置" },
+		{"id":"7", "icon":"icon_团队中心.png", 	"name":"团队中心" }
+	],
+	"icon2Arr":
+	[
+		{"id":"0", "icon":"set_icon_账号设置.png", 	"name":"账号设置" },
+		{"id":"1", "icon":"set_icon_安全设置.png", 	"name":"安全设置" },
+		{"id":"2", "icon":"set_icon_音效设置.png", 	"name":"音效设置" },
+		{"id":"3", "icon":"set_icon_帮助与反馈.png", 	"name":"帮助中心" },
+		{"id":"4", "icon":"set_icon_关于头彩.png", 	"name":"关于新南山" }
+	],
+	"icon3Arr":
+	[
+		{"id":"0", "icon":"group_开户管理.png", 	"name":"开户管理" },
+		{"id":"1", "icon":"group_会员管理.png", 	"name":"会员管理" },
+		{"id":"2", "icon":"group_团队统计.png", 	"name":"团队统计" },
+		{"id":"3", "icon":"group_团队投注.png", 	"name":"团队投注" },
+		{"id":"4", "icon":"group_团队盈亏.png", 	"name":"团队盈亏" },
+		{"id":"5", "icon":"group_帐变明细.png", 	"name":"帐变明细" }
+	],
+	"mineCenterGridArr":
+	[
+		{"id":"0", "icon":"icon_user_charge", 	"name":"今日充值", "value":"0"},
+		{"id":"1", "icon":"icon_user_withdraw", "name":"今日提现", "value":"0"},
+		{"id":"2", "icon":"icon_user_money", 	"name":"今日销量", "value":"0"},
+		{"id":"3", "icon":"icon_user_income", 	"name":"今日盈利", "value":"0"}
+	],
+	"groupManageArr":
+	[
+		{"id":"0", "icon":"icon_user_charge", 	"name":"团队充值", "value":"0"},
+		{"id":"1", "icon":"icon_user_withdraw", "name":"团队提现", "value":"0"},
+		{"id":"2", "icon":"icon_user_money", 	"name":"团队销量", "value":"0"},
+		{"id":"3", "icon":"icon_user_income", 	"name":"团队盈利", "value":"0"}
+	],
+	"mineCenterArr":
+	[
+		{"id":"0", "icon":"user_icon_analysts", "title":"个人统计分析"},
+		{"id":"1", "icon":"user_icon_form", "title":"个人盈亏报表"},
+		{"id":"2", "icon":"user_icon_details", "title":"个人帐变明细"},
+		{"id":"3", "icon":"user_icon_record", "title":"个人游戏记录"},
+		{"id":"4", "icon":"user_icon_price", "title":"个人奖金总览"}
+	],
+	"groupArr":
+	[
+		{"id":"0", "icon":"user_icon_analysts", "title":"团队统计分析"},
+		{"id":"1", "icon":"user_icon_form", "title":"团队盈亏报表"},
+		{"id":"2", "icon":"user_icon_details", "title":"团队帐变明细"},
+		{"id":"3", "icon":"user_icon_record", "title":"团队游戏记录"},
+		{"id":"4", "icon":"user_icon_price", "title":"团队用户管理"}
+	],
+	"mineCenterStatisticalAnalysisArr":
+	[
+		{"id":"0", "icon":"icon_user_charge", 	"name":"总充值", "value":"0"},
+		{"id":"1", "icon":"icon_user_withdraw", "name":"总提现", "value":"0"},
+		{"id":"2", "icon":"icon_user_money", 	"name":"总销量", "value":"0"},
+		{"id":"3", "icon":"icon_price_send", 	"name":"总派奖", "value":"0"},
+		{"id":"4", "icon":"icon_dot_send", 	"name":"总返点", "value":"0"},
+		{"id":"5", "icon":"icon_sale", 		"name":"总促销", "value":"0"},
+		{"id":"6", "icon":"icon_interest", 		"name":"总佣金", "value":"0"},
+		{"id":"7", "icon":"icon_user_income", 	"name":"总盈利", "value":"0"}
+	],
+	"groupStatisticalAnalysisArr":
+	[
+		{"id":"0", "icon":"icon_user_charge", 	"name":"团队佣金", "value":"0"},
+		{"id":"1", "icon":"icon_user_withdraw", "name":"团队充值", "value":"0"},
+		{"id":"2", "icon":"icon_user_money", 	"name":"团队提现", "value":"0"},
+		{"id":"3", "icon":"icon_price_send", 	"name":"团队余额", "value":"0"},
+		{"id":"4", "icon":"icon_dot_send", 	"name":"团队销量", "value":"0"},
+		{"id":"5", "icon":"icon_sale", 		"name":"团队派奖", "value":"0"},
+		{"id":"6", "icon":"icon_interest", 		"name":"团队返点", "value":"0"},
+		{"id":"7", "icon":"icon_user_income", 	"name":"团队盈亏", "value":"0"}
+	],
+	"groupUserAnalysisArr":
+	[
+		{"id":"0", "icon":"icon_user_charge", 	"name":"团队人数", "value":"0"},
+		{"id":"1", "icon":"icon_user_charge", 	"name":"在线人数", "value":"0"},
+		{"id":"2", "icon":"icon_user_charge", 	"name":"新增人数", "value":"0"},
+		{"id":"3", "icon":"icon_user_charge", 	"name":"今日登录", "value":"0"},
+		{"id":"4", "icon":"icon_user_charge", 	"name":"余额小于10元", "value":"0"},
+		{"id":"5", "icon":"icon_user_charge", 	"name":"余额大于10元", "value":"0"},
+		{"id":"6", "icon":"icon_user_charge", 	"name":"三十日未登录", "value":"0"},
+		{"id":"7", "icon":"icon_user_charge", 	"name":"六十日未登录", "value":"0"}
+	],
+	"mineManagerArr":
+	[
+		{"id":"0", "icon":"icon_user", "title":"用户名"},
+		{"id":"1", "icon":"icon_mail", "title":"绑定邮箱"},
+		{"id":"2", "icon":"icon_nickname", "title":"昵称设置"},
+		{"id":"3", "icon":"icon_color", "title":"颜色设置"},
+		{"id":"4", "icon":"icon_theme", "title":"主题设置"}
+	]
+}

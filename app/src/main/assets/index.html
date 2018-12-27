@@ -1,0 +1,271 @@
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>博金</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='screen-orientation' content='portrait' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta name='x5-orientation' content='portrait' />
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<!--  强制主html文件不读取缓存         start -->
+	<meta http-equiv='expires' content='0' />
+	<!--  禁止浏览器从本地计算机的缓存中访问页面内容 -->
+	<metahttp-equiv="Pragma"content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<!--  强制主html文件不读取缓存         end -->
+	<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+	<!-- landscape 横屏显示， portrait 竖屏显示 -->
+	<meta name='laya' logoimg='logo.png' logobkcolor='#ffffff' screenorientation='landscape' cacheid='fffffffff' />
+	
+	<link rel="apple-touch-icon" href="apple-touch-icon.png?v=10000" />
+	
+	<!-- 
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v=10000">
+	    <link rel="stylesheet" type="text/css" href="css/date.css?v=10000">
+     -->
+     
+	<style type="text/css">
+	html,body{height:100%; margin:0;}
+	#loading  
+	{  
+		margin:0;background-color: #FFFFFF;
+	    position:fixed;  
+	    width:100%;  
+	    height:100%;  
+	    text-align:center;
+	    align:center;
+	    z-index:99;  
+	} 
+	#loading img 
+	{    
+	    //width: auto;  
+	    //height: auto;  
+	    max-width: 100%;  
+	    max-height: 100%;  
+	} 
+	
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.mainheight {
+		padding-bottom: 46px;
+	}
+	
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		
+		width: 750px;
+	}
+	
+	.row {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	
+	.col-sm-12 {
+		width: 100%;
+		
+		float: left;
+		
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	
+	canvas {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	</style>
+</head>
+<script>
+var uiType="bj";
+function hideLoading()
+{
+	
+}
+﻿var startIosHandle;
+function setIosStartHandle(_startHandle)
+{
+	startIosHandle = _startHandle;
+}
+function startIosApp(_infoObj)
+{
+	startIosHandle.runWith(_infoObj);
+	startIosHandle = null;
+}
+
+var startAndroidHandle;
+function setAndroidStartHandle(_startHandle)
+{
+	startAndroidHandle = _startHandle;
+}
+function startAndroidApp(_update, _apiUrl, _content)
+{
+	var obj = {};
+	obj["displayUpdateInfoBol"] = _update == "1" ? true : false;
+	obj["apiUrl"] = _apiUrl;
+	obj["content"] = _content;
+	startAndroidHandle.runWith(obj);
+	startAndroidHandle = null;
+}
+
+</script>
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #FFFFFF;'>
+<!--
+<div id="loading">  
+  <img src="res/images/bg_loading.jpg?v=10009" width="640" height="1138" class="img-responsive">  
+</div>
+-->
+
+<!-- 
+<script src='http://im.laychat.net/assets/libs/layui/layui.js?v=10000'></script>
+<script src="http://im.laychat.net/laychat.js?v=10000"></script>
+<script src="js/laychat/laychatExc.js?v=10000"></script>
+ -->
+ 
+<script src="js/jquery.min.js?v=10000"></script>
+<script src="js/rawinflate/rawinflate.min.js?v=10000"></script>
+<script src="js/hallFunc.js?v=10001"></script>
+<script src='Main.max.js?v=10005' loader='laya'></script>
+
+<script src="js/lotteryBet/jsApi.js?v=10000"></script>
+<script src="js/lotteryBet/cqssc/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/gd11x5/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/fc3d/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/bjkl8/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/bjpk10/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/hk6/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/jsk3/LotteryBet.js?v=10000"></script>
+<script src="js/lotteryBet/gdklsf/LotteryBet.js?v=10000"></script>
+<script src="js/md5.js?v=10000"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js?v=10000"></script>
+
+<!-- 
+<div class="ui-border-b" style="position: absolute; z-index:99; width: 100%; ">
+	<div class="date-div" style="visibility: hidden;">
+		<table class="ui-date-bg">
+		<tr>
+			<td class="ui-date-opear ui-date-opearsub" data-op="-1">
+				<span class="ui-date-opearstyle"></span>
+			</td>
+			<td class="ui-date-slectdate">
+			 <input id="nowDate" value="" class="ui-date-scroll ui-date-txt ui-date-input"  readonly/>
+			 <span class="ui-date-week ui-date-txt"></span>
+			</td>
+			<td class="ui-date-opear ui-date-opearadd" data-op="1" >
+			 <span class="ui-date-opearstyle"></span>
+			</td>
+		</tr>
+		</table>
+    </div>
+</div>
+<script type="text/javascript" src="js/util.js?v=10000"></script>
+<script type="text/javascript" src="js/date.js?v=10000"></script>
+-->
+<!-- 手机版日期控件用于的css 
+<link href="css/mobiscroll/mobiscroll.scroller.css?v=10000"rel="stylesheet" type="text/css" />
+<link href="css/mobiscroll/mobiscroll.scroller.ios7.css?v=10000" rel="stylesheet" type="text/css" />
+<link href="css/mobiscroll/mobiscroll.animation.css?v=10000" rel="stylesheet" type="text/css" />
+-->
+<!-- 手机版日期控件用于的js 
+<script src="js/mobiscroll/mobiscroll.core.js?v=10000"></script>
+<script src="js/mobiscroll/mobiscroll.scroller.js?v=10000"type="text/javascript"></script>
+<script src="js/mobiscroll/mobiscroll.select.js?v=10000"type="text/javascript"></script>
+<script src="js/mobiscroll/mobiscroll.datetime.js?v=10000"type="text/javascript"></script>
+<script src="js/mobiscroll/mobiscroll.scroller.ios7.js?v=10000"type="text/javascript"></script>
+<script src="js/mobiscroll/i18n/mobiscroll.i18n.zh.js?v=10000"type="text/javascript"></script>
+<script src="js/DateExc.js?v=10002"></script>
+-->
+
+<script type="text/javascript">
+    var doc_after_laya = "";
+    doc_after_laya += '<div class="warpper" name="iframediv"></div>';
+    doc_after_laya += '<div class="warpper" name="formdiv"></div>';
+    doc_after_laya += '<div class="warpper" name="closeDiv"></div>';
+    $(document.body).append(doc_after_laya);
+    
+	var __asCallBackHandler;
+	//设置as的回调函数
+	function setCallBackFunc(_asCallBackHandler)
+	{	
+		__asCallBackHandler = _asCallBackHandler;
+	}
+	function callBackHandleFunc()
+	{
+		__asCallBackHandler.run();
+		__asCallBackHandler = null;
+	}
+</script>
+
+<script type="text/javascript">
+    function topUpFromAction(data)
+	{	
+		var form1 = document.createElement("form"); 
+		form1.id = "form1"; 
+		form1.name = "form1";
+		document.body.appendChild(form1); 
+		
+		form1.method = "POST";
+		if(data["redirect_url"] != "")
+		{
+			form1.action = data["redirect_url"];
+		}else{
+			form1.action = data["gateway_url"];
+		}
+		for(var key in data)
+		{
+			var input = document.createElement("input"); 
+		    input.type = "hidden"; 
+		    input.name = key; 
+		    input.value = data[key]; 
+		    form1.appendChild(input); 
+		}
+		form1.target = '_blank';
+		
+		form1.submit(); 
+		//document.body.removeChild(form1); 
+	}
+	
+	var hideLoadingHandle;
+	function initHideLoadingHandle(_hideLoadingHandle)
+	{
+		hideLoadingHandle = _hideLoadingHandle;
+	}
+	
+	function removeHideLoadingHandle()
+	{
+		hideLoadingHandle = null;
+	}
+    
+    var iframe;
+    //初始化iframe
+    function initIframe(_iframe)
+    {
+    	iframe = _iframe;
+    	iframe.addEventListener( "load", function()
+    	{
+			//代码能执行到这里说明已经载入成功完毕了
+			this.removeEventListener( "load", arguments.call, false);
+			//这里是回调函数
+			console.log("iframe加载完毕");
+			hideLoadingHandle.run();
+		}, false);
+    }
+</script>
+
+</body>
+</html>

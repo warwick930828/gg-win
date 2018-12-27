@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>test</title>
+</head>
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color: #FFFFFF;'>
+<script type="text/javascript">
+	var form = document.createElement("form");
+    form.method = "POST";
+   
+	
+    document.body.appendChild(form);
+	var url;
+	var attrObj = parseQueryString(window.location.href);
+	for(var key in attrObj)
+	{
+		if(key == "url")
+		{
+			url = attrObj[key];
+			form.action = url;   
+		}
+		else
+		{
+			var element = document.createElement("input"); 
+			element.name=key;
+			element.value=attrObj[key];
+			form.appendChild(element);  
+		}
+	}
+	
+	form.submit();
+	
+	function parseQueryString(url) 
+	{
+		var obj = {};
+		var keyvalue = [];
+		var key = "",
+			value = "";
+		var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+		for (var i in paraString) {
+			keyvalue = paraString[i].split("=");
+			key = keyvalue[0];
+			value = keyvalue[1];
+			obj[key] = value;
+		}
+		return obj;
+	}
+</script>
+
+</body>
+</html>
